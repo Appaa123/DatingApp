@@ -29,7 +29,7 @@ namespace DatingApp.API
         {
             services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
-            services.AddCors(); //Adding Cors policy service
+            services.AddCors(); //Adding Cors policy service here
             
 
         }
