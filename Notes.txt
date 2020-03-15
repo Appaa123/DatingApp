@@ -1,0 +1,77 @@
+--------------------------------------------------------------(DatingApp)DOTNET and Angular Application------------------------------------------------------------------------------
+
+
+	Install NodeJS application
+	Angular installation - npm i @angular/cli
+
+	********************Creating DOTNET API *********************
+
+	dotnet new webapi -n DatingApp.API
+
+	Below are the libraries used in the project.
+
+	<Project Sdk="Microsoft.NET.Sdk.Web">
+  	<PropertyGroup>
+  	  <TargetFramework>netcoreapp3.0</TargetFramework>
+  	</PropertyGroup>
+ 	 <ItemGroup>&#xD;
+  	</ItemGroup>
+ 	<ItemGroup>
+   	 <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2"/>
+    	<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.2"/>
+  	</ItemGroup>
+	</Project>
+
+	To access the EntityFramework in Dotnet we use following command :
+	dotnet tool install --global dotnet-ef
+	To get help in EF we use : 
+	1. dotnet ef -h
+	2. dotnet ef migrations -h 
+	We use Miagrations to Schefold the data.
+
+	To get add the migrations to the project we need to have Microsoft.EntityFrameworkCore.Design package/library.
+	Exectute dotnet ef migrations add InitialCreate
+	to undo use ef migrations remove.
+
+	Now Add dotnet ef database update to get the table created.
+
+	*******************CORS POLICY ISSUE ******************
+
+	 app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()); 
+S
+	**********************Git Commands*********************
+
+	git status
+	If required file name not found, use git add "FILENAME"
+	git commit -m �MESSAGE TO GIT REPOSITORY�
+	git remote add origin https://github.com/Appaa123/DatingApp.git
+	git remote -v
+	git push
+	git push origin master
+	Log into GitHub again. You�ll notice that GitHub is now tracking how many commits you�ve made today. 
+	git fetch/git pull (To fetch the code)
+	git merge (to merge the code)
+
+	***************GITLAB**********************************
+	Create a new repository
+	git clone https://gitlab.com/appaarao22/datingapp.git
+	cd datingapp
+	touch README.md
+	git add README.md
+	git commit -m "add README"
+	git push -u origin master
+
+	Push an existing folder
+	cd existing_folder
+	git init
+	git remote add origin https://gitlab.com/appaarao22/datingapp.git
+	git add .
+	git commit -m "Initial commit"
+	git push -u origin master
+
+	Push an existing Git repository
+	cd existing_repo
+	git remote rename origin old-origin
+	git remote add origin https://gitlab.com/appaarao22/datingapp.git
+	git push -u origin --all
+	git push -u origin --tags
