@@ -38,7 +38,14 @@
 	*******************CORS POLICY ISSUE ******************
 
 	 app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()); 
-S
+
+
+
+	*********************** JWT Token Authentication *******************
+	
+	install packageMicrosoft.IdentityModel.Tokens and System.IdentityModel.Tokens
+	
+
 	**********************Git Commands*********************
 
 	git status
