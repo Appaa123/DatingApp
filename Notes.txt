@@ -39,11 +39,15 @@
 
 	 app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()); 
 
+	*******************FULL FORMS **********************
 
+	DTO - Data Transfer Objects
 
 	*********************** JWT Token Authentication *******************
 	
 	install packageMicrosoft.IdentityModel.Tokens and System.IdentityModel.Tokens
+
+	install Microsoft.Extensions.Configurationfor IConfigurations.
 	
 
 	**********************Git Commands*********************
