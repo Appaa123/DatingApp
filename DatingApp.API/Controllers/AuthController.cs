@@ -26,7 +26,7 @@ namespace DatingApp.API.Controllers
 
         }
 
-        [HttpPost("register")]
+        [HttpPost("register")]  // To register a new user "localhost:5000/api/auth/register"
 
        public async Task<IActionResult> Register(UserForRegisterDto userForRegisterDto){
 
