@@ -50,6 +50,24 @@
 	install Microsoft.Extensions.Configurationfor IConfigurations.
 	
 
+	Dotnet secret storage for storing tokens like data 
+
+	caan refer this link https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.1&tabs=windows
+
+	dotnet user-secrets init - enable secret storage.
+
+	dotnet user-secrets set "AppSettings:Token" "super secret key"
+
+	dotnet user-secrets lilst
+
+	In Production we  use environment variables to store secre keys	
+	
+	Add the below xml in csproj file
+	<PropertyGroup>
+  		<TargetFramework>netcoreapp2.1</TargetFramework>
+  		<UserSecretsId>79a3edd0-2092-40a2-a04d-dcb46d5ca9ed</UserSecretsId>
+	</PropertyGroup>
+
 	**********************Git Commands*********************
 
 	git status
@@ -62,6 +80,8 @@
 	Log into GitHub again. You�ll notice that GitHub is now tracking how many commits you�ve made today. 
 	git fetch/git pull (To fetch the code)
 	git merge (to merge the code)
+
+	git rm appsettings.json --catched //to remove the file from stage not allowing for commiting to github
 
 	***************GITLAB**********************************
 	Create a new repository
