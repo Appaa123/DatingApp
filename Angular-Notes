@@ -1,0 +1,9 @@
+#loginFor/#username - Angular templete reference
+
+. Components are injected automatically while services should be injected with @injectable tag.
+.  localStorage.setItem('token', user.token); = USED TO SET THE VALUE TO THE SPECIFIC KEY
+. import { map } from 'rxjs/operators'; = map IS USED TO MAP TO THE OBJECT RESPONSE WHICH IS rxjs.
+                RxJS (Reactive Extensions for JavaScript) is a library for reactive programming using observables 
+                that makes it easier to compose asynchronous or callback-based code.
+
+Observale - Observable objects are registered, and other objects observe (in Angular using the subscribe method)
