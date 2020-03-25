@@ -9,3 +9,7 @@
 Observale - Observable objects are registered, and other objects observe (in Angular using the subscribe method)
 
 Angular contains modules for each part of the webpage called COMPONENTS 
+
+Parent-Child ------------- @Input()
+Child-Parent ------------- @Output()
+ 
