@@ -10,6 +10,6 @@ Observale - Observable objects are registered, and other objects observe (in Ang
 
 Angular contains modules for each part of the webpage called COMPONENTS 
 
-Parent-Child ------------- @Input()
-Child-Parent ------------- @Output()
+Parent-Child ------------- @Input()-----uses [] to embed data
+Child-Parent ------------- @Output()-----uses () to embed data
  

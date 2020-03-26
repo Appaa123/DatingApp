@@ -26,5 +26,11 @@ login(model: any) { // This is just like Postman, used tpo create JWT token and 
 
 }
 
+register(model: any) {
+
+  return this.http.post(this.baseUrl + 'register', model);
+
+}
+
 
 }
