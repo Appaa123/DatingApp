@@ -33,5 +33,6 @@ import {  ErrorInterceptorProvider } from './_services/error.interceptor';
    bootstrap: [
       AppComponent
    ]
+
 })
 export class AppModule { }

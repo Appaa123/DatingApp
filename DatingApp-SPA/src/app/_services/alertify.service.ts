@@ -6,7 +6,7 @@ import * as alertify from 'alertifyjs';
     providedIn: 'root'
 })
 
-export class AlertifyService{
+export class AlertifyService {
 
     constructor() { }
 
@@ -17,7 +17,6 @@ export class AlertifyService{
             } else {}
         });
     }
- 
 
     success(message: string) {
         alertify.success(message);

@@ -11,14 +11,14 @@ export class RegisterComponent implements OnInit {
   @Output() cancelRegister = new EventEmitter();
 
   model: any = {};
-  constructor(private authservice: AuthService, private alertify: AlertifyService) { }
+  constructor(private authService: AuthService, private alertify: AlertifyService) { }
 
   ngOnInit() {
   }
 
   register() {
 
-    this.authservice.register(this.model).subscribe(() => {
+    this.authService.register(this.model).subscribe(() => {
       this.alertify.success('Registerd succesfully');
     // tslint:disable-next-line: no-shadowed-variable
     }, error => {
@@ -32,6 +32,10 @@ export class RegisterComponent implements OnInit {
 
   //  this.alertify.success('cancelled Successfully');
 
+  }
+
+  hide() {
+    return localStorage.getItem('token');
   }
 
 }
