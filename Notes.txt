@@ -71,6 +71,9 @@
 	setx ASPNETCORE_ENVIRONMENT "Production" TO SET ENV
 	Angular is running in the development mode. Call enableProdMode() to enable the production mode.
 
+	We use HttpInterceptor to use the errors in Angular. We captor the errors by using 
+	HttpInterceptorProvider service and display the errors in front end accordingly.
+
 	**********************Git Commands*********************
 
 	git status
