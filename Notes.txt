@@ -73,6 +73,14 @@
 
 	We use HttpInterceptor to use the errors in Angular. We captor the errors by using 
 	HttpInterceptorProvider service and display the errors in front end accordingly.
+	auth0 angular2 jwt - Is used for decoding and finding the token and other methods related to tokens.
+
+
+
+
+
+
+
 
 	**********************Git Commands*********************
 
