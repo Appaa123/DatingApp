@@ -13,3 +13,7 @@ Angular contains modules for each part of the webpage called COMPONENTS
 Parent-Child ------------- @Input()-----uses [] to embed data
 Child-Parent ------------- @Output()-----uses () to embed data
  
+ ALT + I = To go to .css file
+ ng add ngx-bootstrap@5.0.0  --component dropdowns
+ Got to https://valor-software.com/ngx-bootstrap/#/dropdowns for amy details.
+ https://bootswatch.com/ for templetes
