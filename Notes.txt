@@ -52,7 +52,7 @@
 
 	Dotnet secret storage for storing tokens like data 
 
-	caan refer this link https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.1&tabs=windows
+	can refer this link https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.1&tabs=windows
 
 	dotnet user-secrets init - enable secret storage.
 
