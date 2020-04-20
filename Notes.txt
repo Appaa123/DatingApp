@@ -120,3 +120,29 @@
 	git remote add origin https://gitlab.com/appaarao22/datingapp.git
 	git push -u origin --all
 	git push -u origin --tags
+
+
+
+
+
+
+
+
+
+	********************MIGRATIONS COMMANDS*********************************
+
+dotnet ef migrations add InitialCreate ---Adding the new migrations
+
+dotnet ef migrations remove InitialCreate ---Removing
+
+dotnet ef database update ---updating the databse with the EF
+
+dotnet ef database drop -- dropping
+
+dotnet ef --help
+
+
+EF RELATIONSSHIPS :
+
+	You need to add the UserId which is same in both the tables User and Photo so it acts as Foreign Key and
+	is cascaded and one table will be modified/deleted when other table is modified/deleted.

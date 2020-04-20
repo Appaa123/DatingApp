@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 
+
 const routes: Routes = [];
 
 @NgModule({
@@ -12,6 +13,7 @@ const routes: Routes = [];
    exports: [
       RouterModule
    ],
-   declarations: []
+   declarations: [
+   ]
 })
 export class AppRoutingModule { }

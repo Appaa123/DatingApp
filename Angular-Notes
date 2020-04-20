@@ -17,3 +17,33 @@ Child-Parent ------------- @Output()-----uses () to embed data
  ng add ngx-bootstrap@5.0.0  --component dropdowns - THIS SKIPS US FROM USING JQUERY
  Got to https://valor-software.com/ngx-bootstrap/#/dropdowns for amy details.
  https://bootswatch.com/ for templetes
+
+
+
+
+******************Routing to the different URLs***************
+
+use private router: Router in the constructor and add this.router.navigate(['/home']) method to route
+for a particular condition.
+
+
+*******************guard for not allowing the unknown user to route without login***********************
+
+create guard folder
+ng g guard auth --skipTests
+ add below code should be executed
+
+   canActivate(): boolean {
+    if (this.authService.loggedIn()) {
+      return true;
+    }
+
+    this.alertify.error('You shall not pass!!!');
+    this.router.navigate(['/home']);
+  }
+
+  go to route.ts and add below code
+
+   {path: 'members', component: MemberListComponent, canActivate: [AuthGuard]}
+
+   
