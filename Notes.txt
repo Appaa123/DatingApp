@@ -146,3 +146,12 @@ EF RELATIONSSHIPS :
 
 	You need to add the UserId which is same in both the tables User and Photo so it acts as Foreign Key and
 	is cascaded and one table will be modified/deleted when other table is modified/deleted.
+
+
+AUTOMAPPER : 
+
+	This is used to map a user to its details, i.e a particular user is mapped to the specified details and the
+	same details are returned.
+	This is used to reduce the code as before we were comparing the IDs and returning individual users like:
+		Id=user.ID, Name = user.Name; like that.
+		
