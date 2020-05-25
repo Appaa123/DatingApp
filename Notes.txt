@@ -79,7 +79,7 @@
 	*************************AWS******************
 	npm run -- ng build --prodmTo package a file
 
-	Added jenkins to this
+	Added jenkins to this  project
 
 
 
