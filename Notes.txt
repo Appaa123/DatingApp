@@ -76,7 +76,8 @@
 	auth0 angular2 jwt - Is used for decoding and finding the token and other methods related to tokens.
 
 
-
+	*************************AWS******************
+	npm run -- ng build --prodmTo package a file
 
 
 
