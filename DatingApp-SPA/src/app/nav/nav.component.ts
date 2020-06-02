@@ -37,4 +37,5 @@ export class NavComponent implements OnInit {
     this.alertify.success('Logged out');
     this.router.navigate(['/home']);
   }
+
 }

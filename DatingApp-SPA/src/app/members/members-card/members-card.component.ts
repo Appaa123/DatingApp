@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { User } from '../../_models/user';
+import { ActivatedRoute } from '@angular/router';
+import { UserService } from 'src/app/_services/user.service';
+import { AlertifyService } from 'src/app/_services/alertify.service';
 
 
 @Component({
@@ -10,9 +13,11 @@ import { User } from '../../_models/user';
 export class MembersCardComponent implements OnInit {
   @Input() user: User;
 
-  constructor() { }
+  constructor(private userService: UserService, private alertify: AlertifyService,
+              private route: ActivatedRoute) { }
 
   ngOnInit() {
+
   }
 
 }
