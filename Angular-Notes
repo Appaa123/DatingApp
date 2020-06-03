@@ -46,4 +46,7 @@ ng g guard auth --skipTests
 
    {path: 'members', component: MemberListComponent, canActivate: [AuthGuard]}
 
+   ********************************
+   Resolvers are used to solve the error for any component by adding the resolver file in route.js
+
    
