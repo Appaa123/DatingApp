@@ -49,4 +49,13 @@ ng g guard auth --skipTests
    ********************************
    Resolvers are used to solve the error for any component by adding the resolver file in route.js
 
+   *********************************
+
+   ngx-gallery kolkov used https://github.com/kolkov/ngx-gallery
+   only ngx-gallery for older versions https://www.npmjs.com/package/ngx-gallery
+ 
+  ***************************************
+
+
+
    
